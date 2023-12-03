@@ -82,12 +82,26 @@ class BookCard extends StatelessWidget {
                 children: [
                   Text(
                     bookName,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                   SizedBox(height: 10),
-                  Text(authorName),
+                  Text(
+                    authorName,
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
                   SizedBox(height: 10),
-                  Text('Rating: $rating'),
+                  Text(
+                    'Rating: $rating',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                     onPressed: () {
